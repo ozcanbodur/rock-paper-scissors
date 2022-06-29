@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissorrs</title>
+</head>
+
+<body>
+    <div class="game">
+
+        <div id="result"></div>
+
+        <div class="score">
+            <div id="player-score">
+                <h1>Player</h1>
+                <p id="score1">0</p>
+            </div>
+            <div id="computer-score">
+                <h1>Computer</h1>
+                <p id="score2">0</p>
+            </div>
+        </div>
+
+        <div class="hands">
+            <img id="player-hand" src="Assets/player-rock.png" alt="player-selected">
+            <img id="computer-hand" src="Assets/rock.png" alt="computer-selected">
+        </div>
+
+        <div id="options" class="option-btn">
+            <button onclick="process('rock')" id="btn-rock">Rock</button>
+            <button onclick="process('paper')" id="btn-paper">Paper</button>
+            <button onclick="process('scissorrs') " id="btn-scissors">Scissorrs</button>
+
+        </div>
+        <div id="newGameBtn" class="option-btn">
+            <button onclick="newgame()" id="new-game" class="select-btn">New Game</button>
+        </div>
+
+        </section>
+        <script src="app.js"></script>
+
+</body>
+
+</html>
